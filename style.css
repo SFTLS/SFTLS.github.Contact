@@ -1,0 +1,168 @@
+body{
+    background: linear-gradient(90deg,rgb(0, 46, 253), rgb(0, 132, 255));
+    height: 100vh ;
+    background: url(img4.png) no-repeat;
+    background-position: center ;
+    background-size: cover;
+   
+}
+
+
+.face{
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.face .content{
+    height: 500px;
+    width: 500px;
+    border-radius: 2px;
+    background: transparent ;
+    border: 1px solid rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px black;
+    
+
+}
+.text{
+    height: 40px;
+    width: 300px;
+    border-radius: 40px;
+    margin: 5px;
+    background: transparent;
+    border: 1px white solid ;
+    color: rgb(255, 255, 255);
+    
+    
+}
+.email{
+    height: 40px;
+    width: 300px;
+    border-radius: 40px;
+    margin: 5px;
+    background: transparent;
+    border: 1px white solid ;
+}
+.password{
+    height: 40px;
+    width: 300px;
+    border-radius: 40px;
+    margin: 5px;
+    background: transparent;
+    border: 1px white solid ;
+}
+button{
+    background: white;
+    color: black;
+    font-size: 20px;
+    height: 45px;
+    width: 305px;
+    border-radius: 40px;
+    margin-top: 20px;
+    border: 1PX white solid;
+    
+}
+input::placeholder{
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+.bxs-lock-alt{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 112px;
+    top: 42.9%;
+    transform: translateY(-50%);
+    
+}
+.bxs-envelope{
+    
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 112px;
+    top: 54.5%;
+    transform: translateY(-50%);
+    
+}
+
+
+@media (max-width:500px)  {
+    .face .content{
+        height: 300px ;
+        width: 300px ;
+      
+    }
+.email ,.password, .text{
+height: 40px ;
+width: 270px;
+
+}
+button{
+    height: 40px ;
+    width: 270px;
+}
+.bxs-lock-alt{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 25px;
+    top: 40.9%;
+    transform: translateY(-50%);
+    
+}
+.bxs-envelope{
+    
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 25px;
+    top: 57.5%;
+    transform: translateY(-50%);
+    
+}
+}
+
+@media (min-width:900px) {
+
+
+    .face .content{
+        height: 800px ;
+        width: 600px ;
+      
+    }
+.email ,.password, .text{
+height: 60px ;
+width: 500px;
+font-size: 18px;
+}
+button{
+    height: 60px ;
+    width: 500px;
+}
+.bxs-lock-alt{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 65px;
+    top: 44.9%;
+    transform: translateY(-50%);
+    scale: 1.2;
+    
+}
+.bxs-envelope{
+    
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 65px;
+    top: 54.5%;
+    transform: translateY(-50%);
+    scale: 1.2;
+    
+    
+}
+
+}
